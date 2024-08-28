@@ -3,87 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Details form</title>
     <link rel="stylesheet" href="style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <i class='bx bx-menu menu-icon'></i>
-            <span class="logo-name">Intelli-Bed</span>
-        </div>
+    <div class="form">
+        Name <br>
+        <input type="text" placeholder="Enter Your Name"> <br><br>
+        Weight <br>
+        <input type="number" placeholder="In Kg"> <br><br>
+        Height <br>
+        <input type="number" placeholder="In feet"> <br><br>
+        Sex 
+        <select name="select">
+            <option value="Select">Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Other">Other</option>
+        </select> <br><br>
+        Date of Birth <br>
+        <input type="month"> <br><br>
+        Govt. ID Proof <br>
+        <input type="file"> <br><br>
+        <button><a href="#">Submit</a></button> <br>
 
-        <div class="sidebar">
-
-            <div class="logo">
-                <i class='bx bx-menu menu-icon'></i>
-                <span class="logo-name">Intelli-Bed</span>
-            </div>
-
-            <div class="sidebar-content">
-                <ul class="lists">
-                    <li class="list">
-                        <a href="#" class="nav-link">
-                            <i class='bx bx-home icon'></i>
-                            <span class="link">Dashboard</span>
-                        </a>
-                    </li>
-
-                    <li class="list">
-                        <a href="#" class="nav-link">
-                            <i class='bx bx-folder icon'></i>
-                            <span class="link">My Files</span>
-                        </a>
-                    </li>
-
-                    <li class="list">
-                        <a href="#" class="nav-link">
-                            <i class='bx bx-envelope icon'></i>
-                            <span class="link">Verify</span>
-                        </a>
-                    </li>
-
-                    <li class="list">
-                        <a href="#" class="nav-link">
-                            <i class='bx bxs-bell-plus iconI'></i>
-                            <span class="linkI">SOS</span>
-                        </a>
-                    </li>
-
-                   
-                </ul>
-
-                <div class="bottom-content">
-                    <li class="list">
-                        <a href="#" class="nav-link">
-                            <i class='bx bx-log-out icon'></i>
-                            <span class="link">Log Out</span>
-                        </a>
-                    </li>
-
-                </div>
-
-            </div>
-        </div>
-    </nav>
-
-    <section class="overlay"></section>
-
-    <script>
-        const navBar = document.querySelector("nav");
-              menuBtns = document.querySelectorAll(".menu-icon");
-              overlay = document.querySelector(".overlay");
-              
-              menuBtns.forEach(menuBtns => {
-                menuBtns.addEventListener("click", () => {
-                    navBar.classList.toggle("open");
-                });
-              });
-
-              overlay.addEventListener("click", () => {
-                navBar.classList.toggle("remove");
-              })
-    </script>
+    </div>
 </body>
 </html>
